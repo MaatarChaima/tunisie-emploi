@@ -1,0 +1,212 @@
+/*
+ * TunisieEmploi — design tokens
+ * Source unique des couleurs de l'application. Le thème est porté par
+ * l'attribut data-theme="light|dark" de <html>, posé avant le premier rendu
+ * par le script de resources/views/partials/theme-script.blade.php
+ * (choix enregistré, sinon prefers-color-scheme).
+ *
+ * Convention :
+ *   *-soft    fond teinté (badges, alertes)
+ *   *-border  bordure associée au fond teinté
+ *   *-fg      texte / icône sur surface ou sur *-soft (contraste AA)
+ *   *-solid   fond plein (pastilles, barres, boutons)
+ */
+
+:root {
+    color-scheme: light;
+
+    /* Surfaces */
+    --te-bg:             #f5f6fa;   /* fond de page */
+    --te-surface:        #ffffff;   /* cartes, panneaux, barre de navigation */
+    --te-surface-2:      #f8fafc;   /* zones secondaires dans une carte */
+    --te-surface-3:      #f1f5f9;   /* survol, puces, pistes */
+    --te-overlay:        rgba(15, 23, 42, .5);
+
+    /* Bordures */
+    --te-border-subtle:  #eef1f5;
+    --te-border:         #e5e7eb;
+    --te-border-strong:  #cbd5e1;
+
+    /* Texte */
+    --te-text:           #111827;
+    --te-text-2:         #374151;
+    --te-text-muted:     #586173;   /* ≥ 4,5:1 sur bg, surface, surface-2 et surface-3 */
+    --te-on-primary:     #ffffff;
+
+    /* Neutres pleins (pastilles, icônes) */
+    --te-neutral-400:    #9ca3af;
+    --te-neutral-solid:  #6b7280;
+    --te-neutral-strong: #334155;
+
+    /* Primaire (indigo) */
+    --te-primary:        #4f46e5;
+    --te-primary-hover:  #4338ca;
+    --te-primary-fg:     #4338ca;
+    --te-primary-soft:   #eef2ff;
+    --te-primary-border: #c7d2fe;
+    --te-primary-400:    #818cf8;
+    --te-primary-ring:   rgba(79, 70, 229, .28);
+
+    /* États */
+    --te-success-fg:     #15803d;
+    --te-success-soft:   #f0fdf4;
+    --te-success-border: #bbf7d0;
+    --te-success-solid:  #16a34a;
+
+    --te-warning-fg:     #a14a08;
+    --te-warning-soft:   #fffbeb;
+    --te-warning-border: #fde68a;
+    --te-warning-solid:  #f59e0b;
+
+    --te-danger-fg:      #b91c1c;
+    --te-danger-soft:    #fef2f2;
+    --te-danger-border:  #fecaca;
+    --te-danger-solid:   #dc2626;
+
+    --te-info-fg:        #1d4ed8;
+    --te-info-soft:      #eff6ff;
+    --te-info-border:    #bfdbfe;
+    --te-info-solid:     #2563eb;
+
+    --te-violet-fg:      #7e22ce;
+    --te-violet-soft:    #faf5ff;
+    --te-violet-border:  #e9d5ff;
+    --te-violet-solid:   #9333ea;
+
+    --te-teal-fg:        #0f766e;
+    --te-teal-soft:      #f0fdfa;
+    --te-teal-border:    #99f6e4;
+    --te-teal-solid:     #0d9488;
+
+    /* Champs de saisie */
+    --te-input-bg:       #ffffff;
+    --te-input-border:   #d1d5db;
+    --te-placeholder:    #6b7280;
+
+    /* Bandeau d'en-tête (hero) : identique dans les deux thèmes, bordé en sombre */
+    --te-hero-from:      #1e1b4b;
+    --te-hero-to:        #3730a3;
+    --te-hero-border:    transparent;
+    --te-hero-text:      #ffffff;
+    --te-hero-muted:     #c7d2fe;
+    --te-hero-accent:    #fcd34d;
+
+    /* Fond des logos d'entreprise (conçus pour un fond blanc, identique dans les deux thèmes) */
+    --te-logo-bg:        #ffffff;
+
+    /* Focus */
+    --te-focus:          #4f46e5;
+
+    /* Ombres */
+    --te-shadow-sm:      0 1px 2px rgba(15, 23, 42, .06), 0 1px 3px rgba(15, 23, 42, .05);
+    --te-shadow-md:      0 4px 16px rgba(15, 23, 42, .08);
+    --te-shadow-lg:      0 12px 32px rgba(15, 23, 42, .12);
+
+    /* Formes et mouvements */
+    --te-radius-sm:      8px;
+    --te-radius:         12px;
+    --te-radius-lg:      16px;
+    --te-ease:           .18s cubic-bezier(.4, 0, .2, 1);
+
+    /* Typographie */
+    --te-font:           'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+
+    --te-bg:             #0b1120;
+    --te-surface:        #131c2e;
+    --te-surface-2:      #182237;
+    --te-surface-3:      #1f2a40;
+    --te-overlay:        rgba(2, 6, 23, .7);
+
+    --te-border-subtle:  #1c2639;
+    --te-border:         #273349;
+    --te-border-strong:  #3a4762;
+
+    --te-text:           #e8edf5;
+    --te-text-2:         #c6cfdc;
+    --te-text-muted:     #9aa6b8;
+    --te-on-primary:     #ffffff;
+
+    --te-neutral-400:    #64748b;
+    --te-neutral-solid:  #64748b;
+    --te-neutral-strong: #475569;
+
+    --te-primary:        #4f46e5;
+    --te-primary-hover:  #5b53ef;
+    --te-primary-fg:     #a5b4fc;
+    --te-primary-soft:   rgba(99, 102, 241, .16);
+    --te-primary-border: rgba(129, 140, 248, .38);
+    --te-primary-400:    #6366f1;
+    --te-primary-ring:   rgba(129, 140, 248, .45);
+
+    --te-success-fg:     #4ade80;
+    --te-success-soft:   rgba(34, 197, 94, .13);
+    --te-success-border: rgba(74, 222, 128, .32);
+    --te-success-solid:  #16a34a;
+
+    --te-warning-fg:     #fbbf24;
+    --te-warning-soft:   rgba(245, 158, 11, .13);
+    --te-warning-border: rgba(251, 191, 36, .32);
+    --te-warning-solid:  #d97706;
+
+    --te-danger-fg:      #f87171;
+    --te-danger-soft:    rgba(239, 68, 68, .13);
+    --te-danger-border:  rgba(248, 113, 113, .35);
+    --te-danger-solid:   #dc2626;
+
+    --te-info-fg:        #60a5fa;
+    --te-info-soft:      rgba(59, 130, 246, .14);
+    --te-info-border:    rgba(96, 165, 250, .32);
+    --te-info-solid:     #2563eb;
+
+    --te-violet-fg:      #c084fc;
+    --te-violet-soft:    rgba(168, 85, 247, .14);
+    --te-violet-border:  rgba(192, 132, 252, .32);
+    --te-violet-solid:   #9333ea;
+
+    --te-teal-fg:        #2dd4bf;
+    --te-teal-soft:      rgba(20, 184, 166, .14);
+    --te-teal-border:    rgba(45, 212, 191, .32);
+    --te-teal-solid:     #0d9488;
+
+    --te-input-bg:       #0f1729;
+    --te-input-border:   #334058;
+    --te-placeholder:    #8a96aa;
+
+    --te-hero-from:      #1e1b4b;
+    --te-hero-to:        #312e81;
+    --te-hero-border:    rgba(129, 140, 248, .28);
+    --te-hero-text:      #ffffff;
+    --te-hero-muted:     #c7d2fe;
+    --te-hero-accent:    #fcd34d;
+
+    --te-focus:          #a5b4fc;
+
+    --te-shadow-sm:      0 1px 2px rgba(0, 0, 0, .3);
+    --te-shadow-md:      0 4px 16px rgba(0, 0, 0, .35);
+    --te-shadow-lg:      0 12px 32px rgba(0, 0, 0, .45);
+}
+
+/*
+ * Alias historiques : les composants Breeze et quelques vues utilisent encore
+ * ces noms. Ils pointent vers les tokens, sans valeur propre.
+ */
+:root {
+    --primary:       var(--te-primary);
+    --primary-dark:  var(--te-primary-hover);
+    --primary-light: var(--te-primary-soft);
+    --accent:        var(--te-warning-solid);
+    --surface:       var(--te-bg);
+    --surface-2:     var(--te-surface);
+    --border:        var(--te-border);
+    --text-main:     var(--te-text);
+    --text-muted:    var(--te-text-muted);
+    --radius-sm:     var(--te-radius-sm);
+    --radius:        var(--te-radius);
+    --shadow-sm:     var(--te-shadow-sm);
+    --shadow-md:     var(--te-shadow-md);
+    --transition:    var(--te-ease);
+}
