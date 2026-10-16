@@ -95,19 +95,35 @@ Visitors can browse and search offers without an account. Every page works in **
 
 ---
 
-## Demo videos
+Short, silent recordings of the main user journeys.
 
-Short, silent recordings of the main user journeys (10 s to 1 min 20 each).
+**1. Browse, filter, sort and switch theme** (visitor)
 
-| # | Journey | Role | Video |
-|---|---|---|---|
-| 1 | Browse, filter, sort, open an offer, switch theme | Visitor | [v1-apercu.mp4](docs/demos/v1-apercu.mp4) |
-| 2 | Apply to an offer and follow the application | Candidate | [v2-postuler.mp4](docs/demos/v2-postuler.mp4) |
-| 3 | Review an application, download the CV, accept it | Company | [v3-traiter-candidature.mp4](docs/demos/v3-traiter-candidature.mp4) |
-| 4 | Publish an offer (with a validation error), then approve it | Company → Admin | [v4-publier-moderer.mp4](docs/demos/v4-publier-moderer.mp4) |
-| 5 | Dashboard periods, tooltips, CSV export, dark mode | Admin | [v5-dashboard.mp4](docs/demos/v5-dashboard.mp4) |
-| 6 | Handle a report | Admin | [v6-signalement.mp4](docs/demos/v6-signalement.mp4) |
-| 7 | Mobile: menu, theme switch, filters | Visitor | [v7-mobile.mp4](docs/demos/v7-mobile.mp4) |
+https://github.com/user-attachments/assets/9986851e-a46a-4c91-bdac-f93f2e3bceb2
+
+**2. Apply to an offer and follow the application** (candidate)
+
+https://github.com/user-attachments/assets/35082507-52e5-4528-a000-2faf09900965
+
+**3. Review an application and accept it** (company)
+
+https://github.com/user-attachments/assets/82a6c3f8-a9f1-4468-ab4f-179ff8f61a52
+
+**4. Publish an offer, then approve it** (company → administrator)
+
+https://github.com/user-attachments/assets/81117f07-97ac-4ba1-9aed-c18811761145
+
+**5. Dashboard: periods, tooltips, CSV export, dark mode** (administrator)
+
+https://github.com/user-attachments/assets/4df75c78-0762-43ad-9f4e-f0362eba243c
+
+**6. Handle a report** (administrator)
+
+https://github.com/user-attachments/assets/a9412520-630d-443e-bfcb-3cf58f522770
+
+**7. Mobile: menu, theme switch, filters** (visitor)
+
+https://github.com/user-attachments/assets/f8188e66-79c6-4c37-9628-ca11cf4fb086
 
 ---
 
